@@ -1,0 +1,51 @@
+
+.paracss {
+  color:  #7a7a7a !important;
+    font-family: var(--e-global-typography-text-font-family ), Open Sans !important;
+    font-size: 14px ; 
+    line-height: 29px ;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+
+  
+  .banner{
+    width: 100%;
+    height: 300px;
+  }
+  .heading{
+   
+    font-family: var(--e-global-typography-text-font-family ), Open Sans !important;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-left: 60px;
+    cursor: pointer;
+  }
+  .icon{
+    
+    margin-left: 60px;
+    width: 30px;
+    height: 30px;
+  }
+  .upicon{
+    text-align: center;
+    margin-top: 20px;
+    color: #d6d4d4;
+  }
+  .footer {
+    margin-top: 20px;
+    background-color: #292929;
+    margin-bottom: 0px;
+}
+.contact{
+  margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 60px;
+  color: #fcfcfc;
+}
+.hash{
+  background-color: #292929 !important; 
+}

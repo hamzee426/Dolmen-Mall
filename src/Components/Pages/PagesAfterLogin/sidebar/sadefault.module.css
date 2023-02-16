@@ -1,0 +1,140 @@
+.headings{
+    color: rgb(56, 56, 56);
+    margin-left: 17px;
+   margin-top: 20px;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .acceptButton {
+    width: 43%;
+    height: 40px;
+    background-color: rgb(63, 156, 63);
+    color: white;
+  }
+  
+  .rejectButton {
+    width: 43%;
+    height: 40px;
+    background-color: rgb(207, 87, 87);
+    color: white;
+  }
+  
+  
+
+.cardContainer {
+
+  
+    display: flex;
+    flex-wrap:wrap;
+    box-shadow: 0px 0px 15px -5px grey;
+    margin-top: 20px;
+    width: 100%;
+    height: 218px;
+    user-select: none;
+    position: absolute;
+  }
+ 
+  .tean{
+    margin-top: 250px;
+  }
+
+
+.admcss{
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  margin-left: 19px;
+}
+
+
+  .nr{
+    user-select: none;
+    align-self: center;
+    align-items: center;
+   margin-left: 390px;
+  }
+ 
+  .card {
+    margin-left: 20px;
+    user-select: none;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .button1{
+    user-select: none;
+    margin-top: -9.5px;
+    margin-left: 8px;
+    background-color: transparent;
+   font-size: 40px;
+    border: none;
+  }
+
+  .button2{
+    user-select: none;
+    margin-top: -9.5px;
+    margin-left: 4px;
+    background-color: transparent;
+   font-size: 40px;
+    border: none;
+  }
+  .title {
+    user-select: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(75, 75, 75);
+  }
+  .circ{
+   /* position:absolute; */
+   user-select: none;
+   margin-left: -40px;
+    align-self: center;
+    justify-self: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 25px -5px grey;
+    border-radius: 50%;
+  }
+  .circ1{
+    user-select: none;
+    position:absolute;
+    margin-left: 10px;
+     align-self: center;
+     justify-self: center;
+     width: 50px;
+     height: 50px;
+     box-shadow: 0px 0px 25px -5px grey;
+     border-radius: 50%;
+   }
+  
+  .description {
+    user-select: none;
+    font-size: 14px;
+    color: gray;
+  }
+  

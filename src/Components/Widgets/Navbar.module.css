@@ -1,0 +1,23 @@
+.logo{
+   
+    align-self:center;
+    align-items:center;
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-color: none;
+    background-color: transparent;
+}
+div#navbarNavDropdown {
+    margin-left: 350px;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 40px;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+.ml{
+    left: 70px;
+}

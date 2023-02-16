@@ -1,0 +1,90 @@
+
+.sideimage{
+   width: 500px;
+   height: 600px;
+   display: block;
+   margin-top: -150px;
+}
+.row{
+    margin-bottom: -100px;
+}
+
+.mdbcol{
+    margin-right: 100px;
+    margin-top: 0px;
+}
+
+.mdbbtn{
+    width: 445px;
+    height: 40px;
+    color:aliceblue;
+    margin-left: 0px;
+    margin-top: -600px;
+    border-radius: 5px;
+    background-color: rgb(20, 20, 20);
+    border-color: rgb(20, 20, 20);
+    
+}
+
+.mdbbtnreg{
+    width: 445px;
+    height: 40px;
+    color:aliceblue;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgb(20, 20, 20);
+    border-color: rgb(20, 20, 20);
+    margin-left: 696px;
+}
+
+.labbutton{
+    width: 220px;
+    margin-right: 30px;
+}
+.error{
+    margin-top: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+}
+
+.label{
+    width: 220px;
+    margin-left: -33px;
+    font-size: 17px;
+}
+.label2{
+    width: 220px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.ul{
+    list-style-type: none;
+    display: flex;
+}
+
+
+.mdbbtnreg:hover{
+    width: 445px;
+    height: 40px;
+    
+    color:aliceblue;
+    background-color: #1038d8;
+    border-color: rgb(20, 20, 20);
+}
+.mdbbtn:hover{
+    width: 445px;
+    height: 40px;
+    color:aliceblue;
+    
+    background-color: #1038d8;
+    border-color: rgb(20, 20, 20);
+    
+}
+
+.title{
+    cursor: pointer;
+   text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

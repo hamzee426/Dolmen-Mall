@@ -1,0 +1,11 @@
+.shape{
+    margin-top: 10px;
+    margin-left: 25px;
+    box-shadow: 0px 0px 25px -5px grey;
+    height: 600px;
+    width: 880px;
+    background-color: #ffff;
+    color: #ffff;
+    size: stretch;
+    position:absolute;
+}

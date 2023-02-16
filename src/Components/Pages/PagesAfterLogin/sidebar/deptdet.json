@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "deptname":" 1",
+        "source":"Department",
+        "deptadmin":"Hamza",
+        "Users":" 200",
+        "DOC":"12-4-2022"
+    },
+    {
+        "id":2,
+        "deptname":" 2",
+        "source":"Department",
+        "deptadmin":"Hasnain",
+        "Users":"165",
+        "DOC":"14-4-2022"
+    },
+    {
+        "id":3,
+        "deptname":" 3",
+        "source":"Department",
+        "deptadmin":"Hamza",
+        "Users":" 432",
+        "DOC":"15-4-2022"
+    }
+]

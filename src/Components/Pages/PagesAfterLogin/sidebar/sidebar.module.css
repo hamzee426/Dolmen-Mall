@@ -1,0 +1,154 @@
+
+.sidebar{
+    margin-top: 10px;
+    margin-left: 75px;
+    box-shadow: 0px 0px 25px -5px grey;
+    height: 600px;
+    width: 300px;
+    background-color: #ffff;
+    color: #ffff;
+}
+
+.fulltag{
+    user-select: none;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: flex;
+    background-color: transparent;
+}
+
+
+.margin{
+    height: 80px;
+    width: 300px;
+    box-shadow: 0px 0px 15px -5px grey;
+    display: flex;
+    justify-content:stretch;
+    background-color: transparent;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+
+.usrname{
+    user-select: none;
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-self: center;
+    background-color: transparent;
+    margin-left: -23px;
+    margin-bottom: -5.4px;
+}
+
+.ul{
+    margin-top: 15px;
+    background-color: transparent;
+}
+
+.acctitle{
+    user-select: none;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: -23px;
+    margin-top: 3.9px;
+    margin-bottom: 8px;
+    background-color: transparent;
+}
+
+
+.admin{
+    user-select: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    margin-bottom: 7px;
+}
+
+.label{
+    cursor: pointer;
+    width: 300px;
+    height: 55px;
+    background-color:#ffff;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.label:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+.ul2{
+
+    display: flex;
+    list-style-type: none;
+}
+
+.mainicon{
+    margin-left: -130px;
+    user-select: none;
+    width: 25px;
+    margin-top: -4px;
+    height: 25px;
+    background-color: transparent;
+    position:absolute;
+}
+.plusicon{
+    margin-top: 0px;
+    margin-left: 60px;
+    user-select: none;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    position:absolute;
+}
+.opttitle{
+    color: rgb(32, 32, 32);
+    margin-left: -80px;
+    margin-top: -4px;
+    user-select: none;
+    font-size: 15px;
+    background-color: transparent;
+    position:absolute;
+}
+
+.pul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 0x;
+   
+}
+
+.opt1{
+    color: rgb(77, 77, 77);
+    margin-top: 7px;
+    font-size: 15px;
+    margin-left: -60px;
+    position: absolute;
+    margin-right: 80px;
+}
+
+.subicon{
+    margin-left: -100px;
+    margin-bottom: -12px;
+    user-select: none;
+    width: 25px;  
+    height: 25px;
+    background-color: transparent;
+    
+}
+
+
+.circle{
+    margin-top: -40px;
+   margin-left: -35px;
+    height: 17.4px;
+    width: 17.4px;
+    border-radius: 50%;
+    background-color: rgb(250, 17, 56);
+    
+}

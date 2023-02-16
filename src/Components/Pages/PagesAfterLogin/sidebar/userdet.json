@@ -1,0 +1,37 @@
+[
+    {
+        "id":"1",
+        "name":"User 1",
+        "NIC":"92401-3487283-9",
+        "DOB":"2-03-2000",
+        "status":"Accepted"
+    },
+    {
+        "id":"2",
+        "name":"User 2",
+        "NIC":"32401-3487283-9",
+        "DOB":"8-07-1993",
+        "status":"Accepted"
+    },
+    {
+        "id":"3",
+        "name":"User 3",
+        "NIC":"32401-3487283-9",
+        "DOB":"5-05-1997",
+        "status":"Accepted"
+    },
+    {
+        "id":"4",
+        "name":"User 4",
+        "NIC":"42401-3487283-9",
+        "DOB":"1-08-1999",
+        "status":"Accepted"
+    },
+    {
+        "id":"5",
+        "name":"User 5",
+        "NIC":"32401-3487283-9",
+        "DOB":"8-07-1996",
+        "status":"Accepted"
+    }
+]

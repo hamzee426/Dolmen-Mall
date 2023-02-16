@@ -1,0 +1,130 @@
+.hr {
+    width: 100%;
+    height: 1px;
+    margin-top: 50px;
+    margin-bottom: -2px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+  }
+  .hr1 {
+    width: 100%;
+    height: 1px;
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+  }
+/*   
+ .container{
+    margin-top: 4px;
+    margin-left: 14px;
+    width: 850px;
+    height: 440px;
+    background-color: rgb(243, 243, 243);
+    position: absolute;
+    
+ } */
+
+ .admins{
+    color: black;
+    margin-top: 10px;
+    margin-left: 40px;
+ }
+
+ .icon-add{
+    margin-left: 480px;
+    color: rgb(182, 179, 179);
+    width: 15px;
+    height: 17px;
+    cursor: pointer;
+ }
+
+ .icon-delete{
+    cursor: pointer;
+    margin-left: 25px;
+    color: rgb(182, 179, 179);
+    width: 15px;
+    height: 17px;
+ }
+ .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -10px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    
+    margin-top: 8px;
+  }
+  
+  .search-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 80%;
+    outline: none;
+  }
+
+  .ul{
+    margin-top: 10px;
+    margin-bottom: -15px;
+    list-style-type: none;
+    display: flex;
+    color: black;
+  }
+
+  .id{
+    margin-top: 14px;
+    margin-left: 20px;
+  }
+  .dn{
+    margin-top: 14px;
+    margin-left: 80px;
+  }
+  .du{
+    margin-top: 14px;
+    margin-left: 60px;
+  }
+  .doc{
+    margin-top: 14px;
+    margin-left: 45px;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    
+    width: 500px;
+    height: 508px;
+    
+   
+  }
+  
+  .popup-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }

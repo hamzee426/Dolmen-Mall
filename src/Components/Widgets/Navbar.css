@@ -1,0 +1,16 @@
+@media screen and (min-width:777px){
+  .nav-link {
+    padding:18px 0;
+    min-width:120px;
+  }
+  .navbar {
+    padding: 0px;
+    height: 80px;
+  }
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: 40px;
+  margin-top: var(--bs-dropdown-spacer);
+}
+

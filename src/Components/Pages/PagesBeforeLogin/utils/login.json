@@ -1,0 +1,52 @@
+{
+    "SA": [
+        {
+            "username": "admin@gmail.com",
+            "password": "12345"
+        },
+        {
+            "username": "Hamza",
+            "password": "abc"
+        }
+    ],
+    "DA": [
+        {
+            "username": "Dadmin",
+            "password": "d12345"
+        },
+        {
+            "username": "DHamza",
+            "password": "dabc"
+        }
+    ],
+    "DU": [
+        {
+            "username": "Duadmin",
+            "password": "du12345"
+        },
+        {
+            "username": "DuHamza",
+            "password": "duabc"
+        }
+    ],
+    "TA": [
+        {
+            "username": "Tadmin",
+            "password": "t12345"
+        },
+        {
+            "username": "THamza",
+            "password": "tabc"
+        }
+    ],
+    "TU": [
+        {
+            "username": "Tuadmin",
+            "password": "tu12345"
+        },
+        {
+            "username": "TuHamza",
+            "password": "tuabc"
+        }
+    ]
+}

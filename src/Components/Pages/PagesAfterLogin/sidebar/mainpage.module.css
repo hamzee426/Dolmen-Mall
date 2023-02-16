@@ -1,0 +1,164 @@
+.head{
+    color: rgb(17, 17, 17);
+    /* position: absolute; */
+    text-align: center;
+    
+    margin-top: 25px;
+    margin-left: 0px;
+}
+.button{
+   margin-top: 39px;
+   margin-left: 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    color:rgb(41, 40, 40);
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    
+    border-color: rgb(0, 0, 0);
+    position:relative;
+    
+}
+
+.para{
+    margin-left: 30px;
+    margin-top: 100px;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+}
+.para1{
+    margin-left: 30px;
+    color: black;
+    font-size: 20px;
+    margin-top: 140px;
+    position: absolute;
+}
+
+.cont{
+    margin-top: 36px;
+}
+
+.ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.id{
+    margin-left: -10px;
+    color: black;
+}
+.dn{
+    margin-left: 90px;
+    color: black;
+}
+
+.da{
+    margin-left: 115px;
+    position: absolute;
+    color: black;
+}
+.usr{
+    
+    margin-left: 230px;
+    color: black;
+}
+.doc{
+    margin-left: 70px;
+    color: black;
+}
+.icndlt{
+    cursor: pointer;
+    margin-left: 70px;
+    color: gray;
+}
+.icnedit{
+    cursor: pointer;
+    margin-left: 50px;
+    color: gray;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+  }
+
+  .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    
+    width: 500px;
+    height: 570px;
+    
+   
+  }
+
+  .header {
+    color: black;
+    margin-top: 7px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+.hide{
+    color: transparent;
+    position: absolute;
+}
+
+  .clsbtn {
+    color: aliceblue;
+    border: none;
+    background-color: rgb(219, 70, 70);
+
+    margin-left: 140px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .savebtn {
+    color: aliceblue;
+    background-color: rgb(37, 161, 58);
+    border: none;
+    margin-left: 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .nicc{
+    margin-left: 70px;
+    color: black;
+  }
+
+  .dobb{
+    margin-left: 50px;
+    color: black;
+  }
+
+  .sts{
+    margin-left: 50px;
+    color: black;
+  }
+
+  .nme{
+    color: black;
+    margin-left: 98px;
+  }
