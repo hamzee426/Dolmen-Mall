@@ -24,13 +24,14 @@ export default function Rightpage(props) {
      
       <Router>
       <Switch>
-        <Route exact path='/dashboard/' component={SADefault}/>
-        <Route path="/dashboard/defaultpage"  component={SADefault} />
+        <Route exact path='/sadashboard/' component={SADefault}/>
+        <Route path="/sadashboard/defaultpage"  component={SADefault} />
         <Route path="/dashboard/deptuser"  component={Deptuser} />
         <Route path="/dashboard/teanuser"  component={Teanuser} />
         <Route path="/dashboard/deptadm"  component={Deptadmin} />
         <Route path="/dashboard/teanadm"  component={Teanadmin} />
         <Route path="/dashboard/pendingreq"  component={Pendingreq} />
+        <Route path="/dashboard/settings"  component={Settings} />
         
        
  

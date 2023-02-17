@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import css from './LoginForm.module.css'
 import { useHistory } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Dashboard from '../Pages/PagesAfterLogin/dashboard';
 import logindata from '../Pages/PagesBeforeLogin/utils/login.json'
 import {
   MDBContainer,
@@ -11,15 +10,14 @@ import {
   MDBInput,
 }
 from 'mdb-react-ui-kit';
-import { useAuth } from 'react-use-auth';
 
 
 
 
 export default function Login_Form(props) {
 
-  const { login } = useAuth();
-
+ 
+ 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
@@ -30,19 +28,18 @@ export default function Login_Form(props) {
   const handleLogin = (event) => {
     event.preventDefault();
  
-   
+    var path='';
     fetch(logindata)
     .then(data=>{
       let user="";
-    
-      if(props.title === "SUPER ADMIN"){ user = logindata.SA.find(user => user.username === username && user.password === password); }
-      if(props.title === "DEPARTMENT ADMIN"){ user = logindata.DA.find(user => user.username === username && user.password === password); }
-      if(props.title === "TEANUT ADMIN"){ user = logindata.TA.find(user => user.username === username && user.password === password); }
-      if(props.title === "DEPARTMENT USER"){ user = logindata.DU.find(user => user.username === username && user.password === password); }
-      if(props.title === "TEANUT USER"){ user = logindata.TU.find(user => user.username === username && user.password === password); }
+      if(props.title === "SUPER ADMIN"){ user = logindata.SA.find(user => user.username === username && user.password === password); path='/sadashboard'}
+      if(props.title === "DEPARTMENT ADMIN"){ user = logindata.DA.find(user => user.username === username && user.password === password); path='/dadashboard'}
+      if(props.title === "TEANUT ADMIN"){ user = logindata.TA.find(user => user.username === username && user.password === password); path='/tadashboard'}
+      if(props.title === "DEPARTMENT USER"){ user = logindata.DU.find(user => user.username === username && user.password === password); path='/dudashboard'}
+      if(props.title === "TEANUT USER"){ user = logindata.TU.find(user => user.username === username && user.password === password); path='/tudashboard'}
       
       if(user){
-        login({user});
+       
         setShowPopup2(true);
         setTimeout(() => {
           setShowPopup2(false);
@@ -103,7 +100,6 @@ export default function Login_Form(props) {
 
   );
 }
-
 
 
 

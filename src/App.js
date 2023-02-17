@@ -1,5 +1,4 @@
 import React from 'react';
-import { useAuth } from 'react-use-auth';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,36 +13,24 @@ import DeptAdminPage from './Components/Pages/PagesBeforeLogin/deptadmin'
 import DeptUsrPage from './Components/Pages/PagesBeforeLogin/deptuser'
 import TeanUsrPage from './Components/Pages/PagesBeforeLogin/teanuser'
 import Dashboardd from './Components/Pages/PagesAfterLogin/dashboard'
-import Sadefault from './Components/Pages/PagesAfterLogin/sidebar/sadefault';
-import Pendingreq from './Components/Pages/PagesAfterLogin/sidebar/pendingreq';
-import Settings from './Components/Pages/PagesAfterLogin/sidebar/settings';
 
-function PrivateRoute({ children, ...rest }) {
-  const { isAuthenticated,login,logout } = useAuth();
+function PrivateRoute({component: Component,isAuthenticated,...rest}){
 
-  return (
-    
-    <Route
-    
-      {...rest}
-      render={({ location }) =>
-      
-        isAuthenticated() ? (
-          children
-        ) : (
-          <Redirect
-            to={{
-              pathname: "/salogin",
-              state: { from: location }
-            }}
-          />
-        )
+  return(
+    <Route {...rest} render={(props) => {
+      if (isAuthenticated) {
+        return <Component {...props} />;
+      } else {
+        return <Redirect to="/tulogin" />;
       }
-    />
+    }} />
   );
 }
 
+ 
+
 function App() {
+  const isAuthenticated = true;
   return (
     <Router>
       <Switch>
@@ -65,9 +52,13 @@ function App() {
         <Route exact path="/tulogin">
           <TeanUsrPage />
         </Route>
-        <PrivateRoute path="/dashboard">
-          <Dashboardd title="Super Admin" />
-        </PrivateRoute>
+        {/* <PrivateRoute exact path="/sadashboard" component={(props) => <Dashboardd title="Super Admin" {...props} />} isAuthenticated={isAuthenticated} />
+        <PrivateRoute exact path="/dadashboard" component={(props) => <Dashboardd title="Department Admin" {...props} />} isAuthenticated={isAuthenticated} />
+        <PrivateRoute exact path="/tadashboard" component={(props) => <Dashboardd title="Teanut Admin" {...props} />} isAuthenticated={isAuthenticated} />
+        <PrivateRoute exact path="/dudashboard" component={(props) => <Dashboardd title="Department User" {...props} />} isAuthenticated={isAuthenticated} />
+        <PrivateRoute exact path="/tudashboard" component={(props) => <Dashboardd title="Teanut User" {...props} />} isAuthenticated={isAuthenticated} /> */}
+        <PrivateRoute path="/dashboard" component={()=><Dashboardd title="Super Admin"/>} isAuthenticated={isAuthenticated}></PrivateRoute>
+         
       </Switch>
     </Router>
   );

@@ -200,7 +200,7 @@ function Label(props) {
         <div className={css.label}>
           <ul className={css.ul2}>
             <li><img className={css.subicon} src={depticon} alt="depticon"/></li>
-            <a href='/dashboard/teanadm'><li><p className={css.opt1}>Department Admin</p></li></a>
+            <a href='/dashboard/deptadm'><li><p className={css.opt1}>Department Admin</p></li></a>
           </ul>
         </div>
         <div className={css.label}>

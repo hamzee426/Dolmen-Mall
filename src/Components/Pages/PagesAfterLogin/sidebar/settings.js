@@ -14,6 +14,12 @@ from 'mdb-react-ui-kit';
 export default function Settings(props){
 
 
+  const logout=()=>{
+
+    localStorage.removeItem('token')
+    setShowPopup1(true)
+  }
+
     const [showPopup, setShowPopup] = useState(false);
     const [showPopup1, setShowPopup1] = useState(false);
 
@@ -33,7 +39,7 @@ export default function Settings(props){
            
 
 
-            <p className={css.line2}>Sign out<button className={css.button1} onClick={() => setShowPopup1(true)}>Sign out</button></p>
+            <p className={css.line2}>Sign out<button className={css.button1} onClick={logout}>Sign out</button></p>
             <ResetConfirmationPopup show={showPopup1} onClose={() => setShowPopup1(false)} content={conte}/>
             </div>
         </div>
