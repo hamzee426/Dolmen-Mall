@@ -47,20 +47,32 @@ function Options(props) {
     <>
     <Admin />
     <Users />
-    <Pendingrequests />
-    <Settings />
+    <Pendingrequestssa />
+    <Settingssa />
     </>
-    :props.title ==="Department Admin" || props.title ==="Teanut Admin" ? 
+    :props.title==="Department Admin" ?
     <>
-    {props.title==="Department Admin" ? <DeptUsers/> :props.title==="Teanut Admin" ? <TeanUsers/> : <></>}
-    <Pendingrequests />
-    <Settings />
+    <DeptUsers/>
+    <Pendingrequestsda />
+    <Settingsda />
     </>
-  :props.title ==="Department User" || props.title ==="Teanut User" ?
+    :props.title==="Teanut Admin" ?
+    <>
+    <TeanUsers/>
+    <Pendingrequeststa />
+    <Settingsta />
+    </>
+    :props.title==="Department User" ?
+    <>
+    <RegistrationFormdu/>
+    <Statusdu/>
+    <Settingsdu />
+    </>
+  :props.title ==="Teanut User" ?
   <>
-  <RegistrationForm/>
-  <Status/>
-  <Settings />
+  <RegistrationFormtu/>
+  <Statustu/>
+  <Settingstu />
   </>
   :
   <></>}
@@ -89,28 +101,45 @@ function Users() {
   );
 }
 
-function RegistrationForm(){
+function RegistrationFormdu(){
   const title="Registration Form";
   return(
     <>
-    <Label icon={regicon} title={title}></Label>
+    <a href='/dudashboard/regtu'><Label icon={regicon} title={title}></Label></a>
     </>
   );
 }
-function Status(){
+function RegistrationFormtu(){
+  const title="Registration Form";
+  return(
+    <>
+    <a href='/tudashboard/regtu'><Label icon={regicon} title={title}></Label></a>
+    </>
+  );
+}
+function Statusdu(){
   const title="Status";
   return(
     <>
-    <Label icon={statusicon} title={title}/>
+    <a href='/dudashboard/status'><Label icon={statusicon} title={title}/></a>
     </>
   );
 }
+function Statustu(){
+  const title="Status";
+  return(
+    <>
+    <a href='/tudashboard/status'><Label icon={statusicon} title={title}/></a>
+    </>
+  );
+}
+
 function DeptUsers() {
   const title = "Department Users";
   
   return (
     <>
-      <Label icon={usricon} title={title}  />
+      <a href='/dadashboard/deptusers'><Label icon={usricon} title={title}  /></a>
     </>
   );
 }
@@ -119,31 +148,81 @@ function TeanUsers() {
   
   return (
     <>
-      <Label icon={usricon} title={title}  />
+      <a href='/tadashboard/deptusers'><Label icon={usricon} title={title}  /></a>
     </>
   );
 }
 
-function Pendingrequests() {
+function Pendingrequestssa() {
   const title = "Pending Requests";
   return (
     <>
    
-    <a href='/dashboard/pendingreq'><Label icon={pendingicon} title={title} /></a>
+    <a href='/sadashboard/pendingreq'><Label icon={pendingicon} title={title} /></a>
    
     </>
   );
 }
-
-function Settings() {
-  const title = "Settings";
+function Pendingrequestsda() {
+  const title = "Pending Requests";
   return (
     <>
-      <a href='/dashboard/settings'><Label icon={settingsicon} title={title} /></a>
+   
+    <a href='/dadashboard/pendingreq'><Label icon={pendingicon} title={title} /></a>
+   
     </>
   );
 }
-
+function Pendingrequeststa() {
+  const title = "Pending Requests";
+  return (
+    <>
+   
+    <a href='/tadashboard/pendingreq'><Label icon={pendingicon} title={title} /></a>
+   
+    </>
+  );
+}
+function Settingssa() {
+  const title = "Settings";
+  return (
+    <>
+      <a href='/sadashboard/settings'><Label icon={settingsicon} title={title} /></a>
+    </>
+  );
+}
+function Settingsda() {
+  const title = "Settings";
+  return (
+    <>
+      <a href='/dadashboard/settings'><Label icon={settingsicon} title={title} /></a>
+    </>
+  );
+}
+function Settingsta() {
+  const title = "Settings";
+  return (
+    <>
+      <a href='/tadashboard/settings'><Label icon={settingsicon} title={title} /></a>
+    </>
+  );
+}
+function Settingsdu() {
+  const title = "Settings";
+  return (
+    <>
+      <a href='/dudashboard/settings'><Label icon={settingsicon} title={title} /></a>
+    </>
+  );
+}
+function Settingstu() {
+  const title = "Settings";
+  return (
+    <>
+      <a href='/tudashboard/settings'><Label icon={settingsicon} title={title} /></a>
+    </>
+  );
+}
 function Label(props) {
   const [showToggleScreen, setShowToggleScreen] = React.useState(false);
 
@@ -200,13 +279,13 @@ function Label(props) {
         <div className={css.label}>
           <ul className={css.ul2}>
             <li><img className={css.subicon} src={depticon} alt="depticon"/></li>
-            <a href='/dashboard/deptadm'><li><p className={css.opt1}>Department Admin</p></li></a>
+            <a href='/sadashboard/deptadm'><li><p className={css.opt1}>Department Admin</p></li></a>
           </ul>
         </div>
         <div className={css.label}>
           <ul className={css.ul2}>
             <li><img className={css.subicon} src={teanicon} alt="teanicon"/></li>
-            <a href='/dashboard/teanadm'><li><p className={css.opt1}>Teanut Admin</p></li></a>
+            <a href='/sadashboard/teanadm'><li><p className={css.opt1}>Teanut Admin</p></li></a>
           </ul>
         </div>
       </>
@@ -215,13 +294,13 @@ function Label(props) {
         <div  className={css.label}>
           <ul className={css.ul2}>
             <li><img className={css.subicon} src={depticon} alt="depticon"/></li>
-            <a href='/dashboard/deptuser'><li><p className={css.opt1}>Department User</p></li></a>
+            <a href='/sadashboard/deptuser'><li><p className={css.opt1}>Department User</p></li></a>
           </ul>
         </div>
         <div  className={css.label}>
           <ul className={css.ul2}>
             <li><img className={css.subicon} src={teanicon} alt="teanicon"/></li>
-            <a href='/dashboard/teanuser'><li><p className={css.opt1}>Teanut User</p></li></a>
+            <a href='/sadashboard/teanuser'><li><p className={css.opt1}>Teanut User</p></li></a>
           </ul>
         </div>
       </>

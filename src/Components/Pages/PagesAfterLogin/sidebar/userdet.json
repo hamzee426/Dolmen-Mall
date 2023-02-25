@@ -2,6 +2,7 @@
     {
         "id":"1",
         "name":"User 1",
+        "dept":"Deptartment A",
         "NIC":"92401-3487283-9",
         "DOB":"2-03-2000",
         "status":"Accepted"
@@ -9,12 +10,14 @@
     {
         "id":"2",
         "name":"User 2",
+        "dept":"Deptartment B",
         "NIC":"32401-3487283-9",
         "DOB":"8-07-1993",
         "status":"Accepted"
     },
     {
         "id":"3",
+        "dept":"Deptartment C",
         "name":"User 3",
         "NIC":"32401-3487283-9",
         "DOB":"5-05-1997",
@@ -22,6 +25,7 @@
     },
     {
         "id":"4",
+        "dept":"Deptartment D",
         "name":"User 4",
         "NIC":"42401-3487283-9",
         "DOB":"1-08-1999",
@@ -29,6 +33,7 @@
     },
     {
         "id":"5",
+        "dept":"Deptartment E",
         "name":"User 5",
         "NIC":"32401-3487283-9",
         "DOB":"8-07-1996",

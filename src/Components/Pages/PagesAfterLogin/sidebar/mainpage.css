@@ -13,16 +13,7 @@
     background-color: rgb(0, 0, 0);
     border: none;
   }
-/*   
- .container{
-    margin-top: 4px;
-    margin-left: 14px;
-    width: 850px;
-    height: 440px;
-    background-color: rgb(243, 243, 243);
-    position: absolute;
-    
- } */
+
 
  .admins{
     color: black;
@@ -63,6 +54,81 @@
     margin-top: 8px;
   }
   
+  button.inp1.dropdown-toggle.btn.btn-secondary {
+    background-color: transparent;
+}
+  .inp1{
+    text-align: left;
+    color: #595c5f;
+    background-color: transparent;
+    border-color: #dee2e6;
+    margin-left: 80px;
+    width: 300px;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+  }
+  .inp1:active {
+    border-color: #dee2e6;
+    margin-bottom: 18px;
+    color: #595c5f;
+    background-color: transparent;
+  }
+.inp1::selection{
+  border-color: #dee2e6;
+    margin-bottom: 18px;
+    color: #595c5f;
+    background-color: transparent;
+}
+  .inp1:hover{
+    margin-bottom: 18px;
+    text-align: left;
+    color: #595c5f;
+    background-color: transparent;
+    border-color: #dee2e6;
+    margin-left: 80px;
+    width: 300px;
+    justify-content: flex-start;
+  }
+ 
+  button.inp12.dropdown-toggle.btn.btn-secondary {
+    background-color: transparent;
+}
+  .inp12{
+    text-align: left;
+    color: #595c5f;
+    background-color: transparent;
+    border-color: #dee2e6;
+    margin-left: -460px;
+    margin-top: 77px;
+    width: 300px;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+  }
+  .inp12:active {
+    border-color: #dee2e6;
+    margin-bottom: 18px;
+    color: #595c5f;
+    background-color: transparent;
+  }
+.inp12::selection{
+  border-color: #dee2e6;
+    margin-bottom: 18px;
+    color: #595c5f;
+    background-color: transparent;
+}
+  .inp12:hover{
+    margin-bottom: 18px;
+    text-align: left;
+    color: #595c5f;
+    background-color: transparent;
+    border-color: #dee2e6;
+    width: 300px;
+    justify-content: flex-start;
+  }
+
+
+
+
   .search-input {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -82,19 +148,33 @@
 
   .id{
     margin-top: 14px;
-    margin-left: 20px;
+    margin-left: 10px;
+    position: absolute;
+  }
+  .dnic{
+    margin-top: 14px;
+    margin-left: 360px;
+    position: absolute;
   }
   .dn{
     margin-top: 14px;
-    margin-left: 80px;
+    margin-left: 60px;
+    position: absolute;
+  }
+  .dnn{
+    margin-top: 14px;
+    margin-left: 180px;
+    position: absolute;
   }
   .du{
     margin-top: 14px;
-    margin-left: 60px;
+    margin-left: 445px;
+    position: absolute;
   }
   .doc{
     margin-top: 14px;
-    margin-left: 45px;
+    margin-left:625px;
+    
   }
 
   .popup-overlay {
@@ -127,4 +207,30 @@
   .popup-header {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+
+  .adm{
+    margin-top: 14px;
+    margin-left: 100px;
+    position: absolute;
+  }
+
+  .usr{
+    margin-top: 14px;
+    margin-left: 290px;
+    position: absolute;
+  }
+  .aid{
+    margin-top: 10px;
+  }
+
+  .doca{
+    margin-top: 14px;
+    margin-left: 400px;
+    position: absolute;
+  }
+  .dnamee{
+    margin-top: 14px;
+    margin-left: 100px;
+    position: absolute;
   }

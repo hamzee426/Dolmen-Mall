@@ -16,12 +16,12 @@ from 'mdb-react-ui-kit';
 
 export default function Login_Form(props) {
 
- 
+  
+
  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
-  
   const [showPopup1, setShowPopup1] = useState(false);
   const [showPopup2, setShowPopup2] = useState(false);
 
@@ -43,17 +43,16 @@ export default function Login_Form(props) {
         setShowPopup2(true);
         setTimeout(() => {
           setShowPopup2(false);
-          history.push('/dashboard'); 
+          history.push(path); 
         }, 900);
-      
       }
       else{
+        
         setShowPopup1(true);
         setTimeout(() => {
           setShowPopup1(false);
           
         }, 900);
-        
       }
     })
    
@@ -100,7 +99,6 @@ export default function Login_Form(props) {
 
   );
 }
-
 
 
 const ResetConfirmationPopup = ({ show}) => {

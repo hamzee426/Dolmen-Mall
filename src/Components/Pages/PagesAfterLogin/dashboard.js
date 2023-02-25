@@ -5,6 +5,7 @@ import Rightpage from './sidebar/rightpage'
 import css from '../PagesAfterLogin/dashboard.css'
  
 
+
 export default function dashboard(props) {
 
 
@@ -16,7 +17,8 @@ export default function dashboard(props) {
 
   return (
    <>
-   
+
+
     <div className="grid-container">
     <Navbar title={props.title}/>
       <div className="row">
@@ -24,7 +26,7 @@ export default function dashboard(props) {
         <Sidebar title={props.title}/>
         </div>
         <div className="column" >
-        <Rightpage/>
+        <Rightpage title={props.title}/>
         </div>
       </div>
     </div>

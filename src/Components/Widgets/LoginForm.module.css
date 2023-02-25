@@ -8,6 +8,20 @@
 .row{
     margin-bottom: -100px;
 }
+.rowfr{
+    margin-bottom: -100px;
+    margin-left: 200px;
+}
+.mdbbtnreg1{
+    width: 445px;
+    height: 40px;
+    color:aliceblue;
+   margin-left: -452px;
+   margin-top: 130px;
+    border-radius: 5px;
+    background-color: rgb(20, 20, 20);
+    border-color: rgb(20, 20, 20);
+}
 
 .mdbcol{
     margin-right: 100px;
@@ -34,7 +48,7 @@
     border-radius: 5px;
     background-color: rgb(20, 20, 20);
     border-color: rgb(20, 20, 20);
-    margin-left: 696px;
+    margin-left: 686px;
 }
 
 .labbutton{
@@ -88,3 +102,4 @@
     margin-top: 30px;
     margin-bottom: 50px;
 }
+

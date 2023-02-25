@@ -13,24 +13,27 @@ import DeptAdminPage from './Components/Pages/PagesBeforeLogin/deptadmin'
 import DeptUsrPage from './Components/Pages/PagesBeforeLogin/deptuser'
 import TeanUsrPage from './Components/Pages/PagesBeforeLogin/teanuser'
 import Dashboardd from './Components/Pages/PagesAfterLogin/dashboard'
+import Nopage from './Components/Pages/PagesAfterLogin/sidebar/nopage';
 
 function PrivateRoute({component: Component,isAuthenticated,...rest}){
-
   return(
     <Route {...rest} render={(props) => {
       if (isAuthenticated) {
         return <Component {...props} />;
       } else {
-        return <Redirect to="/tulogin" />;
+        return <Redirect to="/salogin" />;
       }
     }} />
   );
 }
 
- 
 
 function App() {
-  const isAuthenticated = true;
+
+ let isAuthenticated=true;
+
+
+
   return (
     <Router>
       <Switch>
@@ -52,13 +55,14 @@ function App() {
         <Route exact path="/tulogin">
           <TeanUsrPage />
         </Route>
-        {/* <PrivateRoute exact path="/sadashboard" component={(props) => <Dashboardd title="Super Admin" {...props} />} isAuthenticated={isAuthenticated} />
-        <PrivateRoute exact path="/dadashboard" component={(props) => <Dashboardd title="Department Admin" {...props} />} isAuthenticated={isAuthenticated} />
-        <PrivateRoute exact path="/tadashboard" component={(props) => <Dashboardd title="Teanut Admin" {...props} />} isAuthenticated={isAuthenticated} />
-        <PrivateRoute exact path="/dudashboard" component={(props) => <Dashboardd title="Department User" {...props} />} isAuthenticated={isAuthenticated} />
-        <PrivateRoute exact path="/tudashboard" component={(props) => <Dashboardd title="Teanut User" {...props} />} isAuthenticated={isAuthenticated} /> */}
-        <PrivateRoute path="/dashboard" component={()=><Dashboardd title="Super Admin"/>} isAuthenticated={isAuthenticated}></PrivateRoute>
-         
+       
+        
+        <PrivateRoute path="/sadashboard" component={()=><Dashboardd title="Super Admin"/>} isAuthenticated={isAuthenticated}></PrivateRoute>
+        <PrivateRoute path="/dadashboard" component={()=><Dashboardd title="Department Admin"/>} isAuthenticated={isAuthenticated}></PrivateRoute>
+        <PrivateRoute path="/tadashboard" component={()=><Dashboardd title="Teanut Admin"/>} isAuthenticated={isAuthenticated}></PrivateRoute>
+        <PrivateRoute path="/dudashboard" component={()=><Dashboardd title="Department User"/>} isAuthenticated={isAuthenticated}></PrivateRoute>
+        <PrivateRoute path="/tudashboard" component={()=><Dashboardd title="Teanut User"/>} isAuthenticated={isAuthenticated}></PrivateRoute>
+        <Route exact path="/*"><Nopage/></Route>
       </Switch>
     </Router>
   );
